@@ -24,24 +24,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { EducationComponent } from './education/education.component';
-import { ExperienceComponent } from './experience/experience.component';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactComponent,
-    ProjectsComponent,
-    EducationComponent,
-    ExperienceComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
+      { path: 'education', loadChildren: './education/education.module#EducationModule'},
+      { path: 'experience', loadChildren: './experience/experience.module#ExperienceModule'},
+      { path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
+      { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule'}
+    ])
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
