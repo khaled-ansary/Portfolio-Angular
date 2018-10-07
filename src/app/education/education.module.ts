@@ -21,16 +21,22 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
+import { MglTimelineModule } from 'angular-mgl-timeline';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { EducationComponent } from './education.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
    declarations: [EducationComponent],
    imports: [
+       AngularFontAwesomeModule,
        CommonModule,
        RouterModule.forChild([
            { path: '', component: EducationComponent },
-       ])
+       ]),
+       MglTimelineModule
    ],
    providers: []
 })

@@ -20,6 +20,7 @@
  */
 
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -39,6 +40,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     AngularFontAwesomeModule,
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot([
       { path: '', redirectTo: '/home', pathMatch: 'full' },
