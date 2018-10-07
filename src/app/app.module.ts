@@ -19,12 +19,12 @@
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -37,6 +37,7 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
+    AngularFontAwesomeModule,
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([

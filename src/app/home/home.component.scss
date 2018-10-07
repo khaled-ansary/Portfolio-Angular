@@ -1,0 +1,19 @@
+$h4-color: #FF5233 ;
+
+img {
+    max-width: 480px; 
+}
+h2{
+    text-align: center;
+    padding-top: 10Px;
+}
+h4{
+    text-align: center;
+    color: $h4-color;
+    padding-bottom: 10Px;
+}
+.card-text{
+    text-align: justify;
+    line-height: 2;
+    padding: 5px;
+}

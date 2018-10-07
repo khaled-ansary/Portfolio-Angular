@@ -3,13 +3,10 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/font-awesome/css/font-awesome.css';
 
-
-$font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $background-color:  #efefef;
 
 body {
-    font: 100% $font-stack;
     color: $primary-color;
     background-color: $background-color;
 }

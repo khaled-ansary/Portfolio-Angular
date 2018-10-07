@@ -1,0 +1,15 @@
+
+$link-primary-color: #fff;
+$link-hover-color: rgb(231, 235, 14);
+
+nav a {
+    color: $link-primary-color;
+}
+
+nav a:hover {
+    color: $link-hover-color;
+}
+
+.brand-icon {
+    padding: 10px;
+}
