@@ -1,15 +1,18 @@
 
 $link-primary-color: #fff;
 $link-hover-color: rgb(231, 235, 14);
+$link-active-color: #fff;
 
-nav a {
+nav .nav-link {
     color: $link-primary-color;
 }
 
-nav a:hover {
+nav .nav-link:hover {
     color: $link-hover-color;
 }
-
+nav .nav-link:active {
+    color: $link-active-color;
+}
 .brand-icon {
     padding: 10px;
 }

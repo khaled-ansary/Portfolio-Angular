@@ -22,16 +22,22 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { TimelineModule } from '../timeline/timeline.module';
+
 import { ExperienceComponent } from './experience.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
    declarations: [ExperienceComponent],
    imports: [
+       AngularFontAwesomeModule,
        CommonModule,
        RouterModule.forChild([
            { path: '', component: ExperienceComponent },
-       ])
+       ]),
+       TimelineModule
    ],
    providers: []
 })

@@ -1,5 +1,5 @@
 /*
- * Created on Sun Oct 07 2018
+ * Created on Sun Oct 08 2018
  *
  * The MIT License (MIT)
  * Copyright (c) 2018 Md Khaled Hossain Ansary
@@ -20,24 +20,14 @@
  */
 
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
-import { TimelineModule } from '../timeline/timeline.module';
-
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { EducationComponent } from './education.component';
+import { TimelineComponent } from './timeline.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-   declarations: [EducationComponent],
+   declarations: [TimelineComponent],
    imports: [
-       AngularFontAwesomeModule,
-       CommonModule,
-       RouterModule.forChild([
-           { path: '', component: EducationComponent },
-       ]),
-       TimelineModule
+       CommonModule
    ],
    providers: []
 })
-export class EducationModule {}
+export class TimelineModule {}

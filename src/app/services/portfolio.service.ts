@@ -1,5 +1,5 @@
 /*
- * Created on Sun Oct 07 2018
+ * Created on Tue Oct 09 2018
  *
  * The MIT License (MIT)
  * Copyright (c) 2018 Md Khaled Hossain Ansary
@@ -19,25 +19,30 @@
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
-import { TimelineModule } from '../timeline/timeline.module';
+/**
+ * PortfolioService call the api to get portfolio json data
+ */
 
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { EducationComponent } from './education.component';
-import { CommonModule } from '@angular/common';
+@Injectable()
+export class PortfolioService {
 
-@NgModule({
-   declarations: [EducationComponent],
-   imports: [
-       AngularFontAwesomeModule,
-       CommonModule,
-       RouterModule.forChild([
-           { path: '', component: EducationComponent },
-       ]),
-       TimelineModule
-   ],
-   providers: []
-})
-export class EducationModule {}
+  readonly portfolioDetailsUrl = 'assets/portfolio.json'
+
+  constructor(private http: HttpClient) { }
+
+  getExperience(){
+
+  }
+
+  getEducation(){
+
+  }
+
+  getProjects(){
+
+  }
+
+}
