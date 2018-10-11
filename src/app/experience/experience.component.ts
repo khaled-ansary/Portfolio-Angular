@@ -41,8 +41,10 @@ export class ExperienceComponent implements OnInit {
 
     this.portfolioService.getPortfolio().subscribe(
         portfolio => {
-           if (portfolio && portfolio.experiences) {
+           if(portfolio && portfolio.skills){
               this.skills = portfolio.skills;
+           }
+           if (portfolio && portfolio.experiences ) {
               portfolio.experiences.forEach(experience => {
 
                   // add experiences in timeline component

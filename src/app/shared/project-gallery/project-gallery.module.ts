@@ -1,5 +1,5 @@
 /*
- * Created on Sun Oct 07 2018
+ * Created on Sun Oct 08 2018
  *
  * The MIT License (MIT)
  * Copyright (c) 2018 Md Khaled Hossain Ansary
@@ -19,27 +19,16 @@
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from '../services/portfolio.service';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ProjectGalleryComponent} from './project-gallery.component';
 
-@Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+@NgModule({
+   declarations: [ProjectGalleryComponent],
+   exports: [ProjectGalleryComponent],
+   imports: [
+       CommonModule
+   ],
+   providers: []
 })
-export class ProjectsComponent implements OnInit {
-
-  projects;
-  constructor(private portfolioService: PortfolioService) { }
-
-  ngOnInit() {
-    this.portfolioService.getPortfolio().subscribe(
-      portfolio => {
-         if (portfolio && portfolio.projects) {
-            this.projects = portfolio.projects;
-         }
-      }
-  );
-  }
-
-}
+export class ProjecctGalleryModule {}

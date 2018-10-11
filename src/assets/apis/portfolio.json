@@ -77,16 +77,28 @@
     ]
     ,
     "projects":[{
-            "name": "",
-            "description": [],
-            "imageUrl": "",
-            "technologies": ""
+            "name": "Analysis tool for document annotation, analysis and enrichment in qualitative archives",
+            "description": "The goal of this project is to enable intelligent access to qualitative data gathered from diverse sociological studies regarding the workplace. The analysis of the content of social sciences has been an important concern. This kind of analysis typically relies on coding of the text, annotating or give comments on the text, and this can limits the sizes of the corpora that can be analyzed for secondary research. Such kind of analysis tool developed in this project to help the social scientist to re-use the important qualitative data for their secondary research. I designed, implemented and tested the analysis tool under supervision of 'Gute-Arbeit' project team of L3S research Center",
+             "imageUrl": "http://khaledansary.com/wp-content/uploads/2017/01/research-project-2.png",
+            "technologies": "JSF, Primefaces, Hibernate, JavaScript, XML, JAXB, REST (Jersey/JAX-RS), Stanford CoreNLP, Netbeans IDE and MySQL. "
         },
         {
-            "name": "",
-            "description": [],
-            "imageUrl": "",
-            "technologies": ""
+            "name": "Reseller Platform for AyetStudios",
+            "description": "AyeT-Studios specialized in Play Store promotion and advertising as well as mobile application and web development. I was responsible to develop a reseller platform for AyeT-Studios. The reseller platform is a web application and developed for SEO agencies or who has clients that request Play Store Promotion or Play Store app installs from safe & genuine sources. ",
+            "imageUrl": "http://khaledansary.com/wp-content/uploads/2017/01/ayet-project.jpg",
+            "technologies": "The web application developed by CakePHP 3 Framework, PHP, MySQL, Ajax, Jquery, JSON, Bootstrap, and Apache"
+        },
+        {
+            "name": "Data acquisition System of Dhaka Electric Supply Company, Dhaka, Bangladesh",
+            "description": "It is a real time desktop based visualization tool of Data acquisition System of Dhaka Electric Supply Company. I was a development and maintenance team member of this system.",
+            "imageUrl": "http://khaledansary.com/wp-content/uploads/2017/01/das-project-4.png",
+            "technologies": "The web application developed by CakePHP 3 Framework, PHP, MySQL, Ajax, Jquery, JSON, Bootstrap, and Apache"
+        },
+        {
+            "name": "Aysha's Food Recipe (Android Mobile Application)",
+            "description": "I developed a food recipe app named 'Aysha's Food Recipe' as well as the Backend REST API and Recipe Management web application. ",
+            "imageUrl": "http://khaledansary.com/wp-content/uploads/2017/01/device-2017-01-02-145928-min.png",
+            "technologies": "Java, Android, Android Studio, REST API and MySQL"
         }
     ]
 }

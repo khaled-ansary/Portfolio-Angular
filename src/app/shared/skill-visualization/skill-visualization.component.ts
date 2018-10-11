@@ -20,7 +20,6 @@
  */
 
 import { Component, OnInit, Input } from '@angular/core';
-declare let d3: any;
 
 @Component({
   selector: 'app-skill-visualization',

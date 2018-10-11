@@ -3,8 +3,7 @@
  */
 export class Project{
     name: string;
-    /* project description can describe as points */
-    description: Array<string>;
+    description: string;
     imageUrl: string;
     technologies: string;
 }

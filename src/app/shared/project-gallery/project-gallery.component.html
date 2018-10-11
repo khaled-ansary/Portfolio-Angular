@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-6 portfolio-item" *ngFor="let project of projects">
+        <div class="card h-100">
+          <img class="card-img-top image-fluid" src="{{project.imageUrl}}" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">{{project.name}}</a>
+            </h4>
+            <p class="card-text">
+              {{project.description}}
+            </p>
+          </div>
+        </div>
+      </div>      
+    </div>
+    <!-- /.row -->
+</div>
+

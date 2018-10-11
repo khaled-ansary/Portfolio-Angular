@@ -23,6 +23,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ProjectsComponent } from './projects.component';
 import { CommonModule } from '@angular/common';
+import { PortfolioService } from '../services/portfolio.service';
+import { ProjecctGalleryModule } from '../shared/project-gallery/project-gallery.module';
 
 @NgModule({
    declarations: [ProjectsComponent],
@@ -30,8 +32,9 @@ import { CommonModule } from '@angular/common';
        CommonModule,
        RouterModule.forChild([
            { path: '', component: ProjectsComponent },
-       ])
+       ]),
+       ProjecctGalleryModule
    ],
-   providers: []
+   providers: [PortfolioService]
 })
 export class ProjectsModule {}
