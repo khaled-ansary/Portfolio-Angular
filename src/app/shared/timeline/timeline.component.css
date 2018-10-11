@@ -1,0 +1,61 @@
+
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.card {
+  box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+}
+.card-header{
+  background-color: #22c0e8;
+  color: #ffffff;
+  
+}
+
+.card-header h2{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 6px;
+  line-height: 1rem;
+  
+}
+
+.card-header .time{
+  margin: 0;
+}
+
+.card-header .institute{
+  margin: 0;
+}

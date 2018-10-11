@@ -1,5 +1,5 @@
 /*
- * Created on Tue Oct 09 2018
+ * Created on Sun Oct 08 2018
  *
  * The MIT License (MIT)
  * Copyright (c) 2018 Md Khaled Hossain Ansary
@@ -19,24 +19,20 @@
  * TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { Portfolio } from '../models/portfolio';
-import { Config } from '../models/config';
-
-/**
- * PortfolioService call the api to get portfolio json data
- */
-
-@Injectable()
-export class PortfolioService {
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { SkillVisualizationComponent } from './skill-visualization.component';
+import { NvD3Module } from 'angular2-nvd3';
+import 'nvd3';
 
 
-  constructor(private http: HttpClient) { }
-
-  getPortfolio(): Observable<Portfolio> {
-    return this.http.get<Portfolio>( Config.apiUrl );
-  }
-
-}
+@NgModule({
+   declarations: [SkillVisualizationComponent],
+   exports: [SkillVisualizationComponent, NvD3Module],
+   imports: [
+       CommonModule,
+       NvD3Module
+   ],
+   providers: []
+})
+export class SkillVisualizationModule {}

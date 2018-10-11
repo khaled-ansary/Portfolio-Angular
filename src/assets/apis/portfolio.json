@@ -1,0 +1,92 @@
+{
+    "experiences":[{
+            "title": "Software Developer",
+            "company": "medisite GmbH, Hannover, Germany.",
+            "duration": "03/2017–Present ",
+            "description": [
+                {"paragraph": "Developing Web based Frontend application for the medical and pharmaceutical sector"},
+                {"paragraph": "Involved in design and implemention of REST API for the frontend application using Java EE Technologies. "}
+
+            ], 
+            "technologies": "Angular 5+, Bootstrap 4, HTML, CSS, JQuery, JS, Jenkins, WildFly, Docker (basic), JavaEE (Spring, JPA, JAX-RS, Maven), Scrum, JIRA, Conﬂuence, Git "
+        },
+        {
+            "title": "Software Developer",
+            "company": "KonVis – Visionäre Konzepte GbR, Hannover, Germany",
+            "duration": "05/2016–10/2016 ",
+            "description": [
+                {"paragraph": "Worked with Agile team of three members"},
+                {"paragraph": "Designed and implemented REST API for Mobile Apps"},
+                {"paragraph": "Developed a responsive web application for functional testing of the REST API."}
+            ], 
+            "technologies": "Angular, HTML5, CSS, JQuery, JavaScript, Java, Spring, JAX-RS, Hibernate, Maven, Mockito, JUnit, Git and MySQL"
+        },
+        {
+            "title": "Student Assistant",
+            "company": "ayeT-Studios GmbH, Hannover, Germany",
+            "duration": "06/2015–12/2015 ",
+            "description": [
+                {"paragraph": "Implemented a reseller platform (https://www.ayetstudios.com/reseller) for ayet-Studios which is a white-label web application and developed for SEO agencies or diﬀerent resellers to conduct user acquisition promotions by driving app install campaigns. "}
+            ], 
+            "technologies": " CakePHP 3 Framework, PHP, MySQL, AJAX, JQuery, JavaScript, Bootstrap, Apache, Agile Methodology, JIRA and Git"
+        }
+        
+    ],
+    "educations": [{
+            "degree": "M.Sc.",
+            "fieldOfStudy": "M.Sc. in Internet Technologies & Information Systems",
+            "university": "Leibniz Universität Hannover, Germany ",
+            "duration": "2012–2015"
+        },
+        {
+            "degree": "Master",
+            "fieldOfStudy": "Master in Information Technology",
+            "university": "University of Dhaka, Bangladesh ",
+            "duration": "2008–2009 "
+        },
+        {
+            "degree": "PGDip",
+            "fieldOfStudy": "PGDip in Information & Communication Technology",
+            "university": "Bangladesh University of Engineering and Technology, Bangladesh",
+            "duration": "2007–2009"
+        },
+        {
+            "degree": "B.Sc.",
+            "fieldOfStudy": "B.Sc. in Computer Science & Engineering",
+            "university": "Stamford University Bangladesh ",
+            "duration": "2002–2006"
+        }
+    ],
+    "skills":[
+       {
+          "label": "Angular, JavaScript",
+          "value": 35
+        },
+        {
+          "label": "Java",
+          "value": 40
+        },
+        {
+          "label": "PHP",
+          "value": 20
+        },
+        {
+          "label": "Android",
+          "value": 10
+        }
+    ]
+    ,
+    "projects":[{
+            "name": "",
+            "description": [],
+            "imageUrl": "",
+            "technologies": ""
+        },
+        {
+            "name": "",
+            "description": [],
+            "imageUrl": "",
+            "technologies": ""
+        }
+    ]
+}

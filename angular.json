@@ -77,7 +77,8 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "../../node_modules/nvd3/build/nv.d3.css"
             ]
           }
         },

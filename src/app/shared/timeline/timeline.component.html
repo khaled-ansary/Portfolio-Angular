@@ -1,0 +1,20 @@
+<div class="container mt-5 mb-5">
+    <ul class="timeline">
+    <li *ngFor="let timeline of timelines">
+        <div class="card">
+            <div class="card-header">
+                <h2>{{timeline.heading}}</h2>
+                <p class="time">{{timeline.duration}}</p>
+                <p class="institute">{{timeline.institute}}</p>
+            </div>
+            <div class="card-body" *ngIf="timeline.description">
+                    <div class="desc">
+                        <p *ngFor="let desc of timeline.description">
+                            {{desc.paragraph}}
+                        </p>
+                    </div>
+            </div>
+        </div>
+    </li>
+    </ul>
+</div>

@@ -22,11 +22,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { TimelineModule } from '../timeline/timeline.module';
-
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { EducationComponent } from './education.component';
 import { CommonModule } from '@angular/common';
+import { EducationComponent } from './education.component';
+import { PortfolioService } from '../services/portfolio.service';
+import { TimelineModule } from '../shared/timeline/timeline.module';
+
 
 @NgModule({
    declarations: [EducationComponent],
@@ -38,6 +39,6 @@ import { CommonModule } from '@angular/common';
        ]),
        TimelineModule
    ],
-   providers: []
+   providers: [PortfolioService]
 })
 export class EducationModule {}

@@ -25,6 +25,7 @@ import { CommonModule } from '@angular/common';
 
 @NgModule({
    declarations: [TimelineComponent],
+   exports: [TimelineComponent],
    imports: [
        CommonModule
    ],

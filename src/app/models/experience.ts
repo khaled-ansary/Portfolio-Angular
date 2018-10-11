@@ -2,7 +2,7 @@
  * Experience model
  */
 export class Experience {
-    position: string;
+    title: string;
     company: string;
     duration: string;
     /* description should display as points */

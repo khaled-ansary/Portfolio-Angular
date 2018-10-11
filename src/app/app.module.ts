@@ -37,19 +37,22 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     HeaderComponent,
     HomeComponent
+    
     ],
   imports: [
     AngularFontAwesomeModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    /** lazy loading modules */
     RouterModule.forRoot([
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'education', loadChildren: './education/education.module#EducationModule'},
       { path: 'experience', loadChildren: './experience/experience.module#ExperienceModule'},
       { path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
-      { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule'}
+      { path: 'projects', loadChildren: './projects/projects.module#ProjectsModule'},
+      { path: 'contact', loadChildren: './contact/contact.module#ContactModule'}
     ])
     
   ],

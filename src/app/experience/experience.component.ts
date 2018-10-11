@@ -20,6 +20,9 @@
  */
 
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from '../services/portfolio.service';
+
+import { Timeline } from '../models/timeline';
 
 @Component({
   selector: 'app-experience',
@@ -28,9 +31,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  constructor() { }
+  experienceTimeline: Array<Timeline> = [];
+  skills;
+  
+
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
+
+    this.portfolioService.getPortfolio().subscribe(
+        portfolio => {
+           if (portfolio && portfolio.experiences) {
+              this.skills = portfolio.skills;
+              portfolio.experiences.forEach(experience => {
+
+                  // add experiences in timeline component
+                  this.experienceTimeline.push(
+                    new Timeline(experience.title,
+                      experience.duration, 
+                      experience.description,
+                      experience.company)
+                  );
+              });
+           }
+        }
+    );
   }
 
 }

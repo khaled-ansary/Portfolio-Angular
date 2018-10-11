@@ -29,7 +29,7 @@ import { CommonModule } from '@angular/common';
    imports: [
        CommonModule,
        RouterModule.forChild([
-           { path: '', component: ProjectsModule },
+           { path: '', component: ProjectsComponent },
        ])
    ],
    providers: []

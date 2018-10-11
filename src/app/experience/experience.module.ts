@@ -24,10 +24,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { TimelineModule } from '../timeline/timeline.module';
+import { TimelineModule } from '../shared/timeline/timeline.module';
 
 import { ExperienceComponent } from './experience.component';
 import { CommonModule } from '@angular/common';
+import { PortfolioService } from '../services/portfolio.service';
+import { SkillVisualizationModule } from '../shared/skill-visualization/skill-visualization.module';
+
 
 @NgModule({
    declarations: [ExperienceComponent],
@@ -37,8 +40,9 @@ import { CommonModule } from '@angular/common';
        RouterModule.forChild([
            { path: '', component: ExperienceComponent },
        ]),
-       TimelineModule
+       TimelineModule,
+       SkillVisualizationModule
    ],
-   providers: []
+   providers: [PortfolioService]
 })
 export class ExperienceModule {}

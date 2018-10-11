@@ -1,7 +1,7 @@
 /**
  * education model
  */
-export class education {
+export class Education {
     degree: string;
     fieldOfStudy: string;
     university: string;

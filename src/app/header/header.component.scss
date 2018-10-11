@@ -1,8 +1,13 @@
 
+$navbar-color: #22c0e8;
 $link-primary-color: #fff;
 $link-hover-color: rgb(231, 235, 14);
-$link-active-color: #fff;
+$link-active-color:  rgb(231, 235, 14);
+$link-visited-color: #fff;
 
+.navbar{
+    background-color: $navbar-color;
+}
 nav .nav-link {
     color: $link-primary-color;
 }
@@ -12,6 +17,9 @@ nav .nav-link:hover {
 }
 nav .nav-link:active {
     color: $link-active-color;
+}
+nav .nav-link:visited {
+    color: $link-visited-color;
 }
 .brand-icon {
     padding: 10px;

@@ -20,6 +20,8 @@
  */
 
 import { Component, OnInit } from '@angular/core';
+import { PortfolioService } from '../services/portfolio.service';
+import { Timeline } from '../models/timeline';
 
 @Component({
   selector: 'app-education',
@@ -28,9 +30,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  constructor() { }
+  educationTimeline: Array<Timeline> = [];
+  
+  constructor(private portfolioService: PortfolioService) { }
 
   ngOnInit() {
+    this.portfolioService.getPortfolio().subscribe(
+      portfolio => {
+         if (portfolio && portfolio.educations) {
+            portfolio.educations.forEach(education => {
+            
+              // add educations in timeline component
+              this.educationTimeline.push(
+                new Timeline(education.fieldOfStudy,
+                  education.duration, 
+                  null,
+                  education.university
+                )
+              );
+            });
+         }
+      }
+  );
   }
 
 }
