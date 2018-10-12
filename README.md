@@ -5,6 +5,7 @@ Implement a portfolio site using Angular 6. This project includes following main
 1. Lazy Loading Modules
 2. Shared Modules
 3. Integration of D3 Charts
+4. Integration of Bootstrap 4 and Fontawesome
 4. Load JSON data using HTTPClient 
 5. Project Gallery
 6. Education and experience Timeline
