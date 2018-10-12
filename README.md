@@ -1,5 +1,12 @@
 # PortfolioAngular
 
+Implement a portfolio site using Angular 6. This project includes following main features --
+
+1. Lazy Loading Modules
+2. Shared Modules
+3. Integration of D3 Charts
+4. Load JSON data using HTTPClient 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
 ## Development server
