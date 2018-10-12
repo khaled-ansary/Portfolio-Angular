@@ -16,7 +16,7 @@ Implement a portfolio site using Angular 6. This project includes following main
 6. Add Google Maps to identify location
 7. Add Footer component
 
-
+![Demo](https://raw.githubusercontent.com/khaled-ansary/Portfolio-Angular/master/src/assets/image/demo.png)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
 ## Development server
