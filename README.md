@@ -6,6 +6,15 @@ Implement a portfolio site using Angular 6. This project includes following main
 2. Shared Modules
 3. Integration of D3 Charts
 4. Load JSON data using HTTPClient 
+5. Project Gallery
+6. Education and experience Timeline
+
+# ToDo
+
+5. Add Contact page with Reactive Forms
+6. Add Google Maps to identify location
+7. Add Footer component
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
