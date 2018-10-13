@@ -47,7 +47,7 @@ export class ExperienceComponent implements OnInit {
            if (portfolio && portfolio.experiences ) {
               portfolio.experiences.forEach(experience => {
 
-                  // add experiences in timeline component
+                  // add experiences in timeline model
                   this.experienceTimeline.push(
                     new Timeline(experience.title,
                       experience.duration, 

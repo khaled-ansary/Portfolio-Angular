@@ -28,6 +28,10 @@ import { Timeline } from '../models/timeline';
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.scss']
 })
+
+/**
+ * Education Component
+ */
 export class EducationComponent implements OnInit {
 
   educationTimeline: Array<Timeline> = [];
@@ -40,7 +44,7 @@ export class EducationComponent implements OnInit {
          if (portfolio && portfolio.educations) {
             portfolio.educations.forEach(education => {
             
-              // add educations in timeline component
+              // add educations in timeline model
               this.educationTimeline.push(
                 new Timeline(education.fieldOfStudy,
                   education.duration, 

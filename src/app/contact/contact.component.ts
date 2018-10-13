@@ -27,14 +27,20 @@ import { FormControl, FormBuilder, Validators  } from '@angular/forms';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
+/**
+ * Contact Form
+ */
+
 export class ContactComponent implements OnInit {
 
   contactForm;
+  // store gMap data
   options;
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
 
+    // reactive form implementation with validation
     this.contactForm = this.formBuilder.group({
       'name' : new FormControl('', Validators.required),
       'email': new FormControl('', Validators.compose([
@@ -43,6 +49,7 @@ export class ContactComponent implements OnInit {
        'message': new FormControl('', Validators.required)     
     }); 
 
+    // option use to set google maps data
     this.options = {
       center: {lat: 36.890257, lng: 30.707417},
       zoom: 12
