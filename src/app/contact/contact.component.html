@@ -1,3 +1,45 @@
-<p>
-  contact works!
-</p>
+<section>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm.value)">
+                     
+        <div class="form-group row">
+            <label class="col-md-3 form-control-label" for="name">Name *:</label>
+            <div class="col-md-9">
+                <input  type="text" name="name" class="form-control"  formControlName="name"   placeholder="Required" />
+                <span  class="help-block" *ngIf="!contactForm.controls['name'].valid&&contactForm.controls['name'].dirty">
+                    Name is required
+                </span>
+            </div>                                          
+        </div>
+        <div class="form-group row">
+            <label class="col-md-3 form-control-label" for="email">Email *:</label>                      
+            <div class="col-md-9">
+                <input  type="text" name="Email" class="form-control"  formControlName="email"  placeholder="Required"/>
+                <span  class="help-block" *ngIf="!contactForm.controls['email'].valid&&contactForm.controls['email'].dirty">
+                          Email is Invalid
+                </span>
+            </div>                       
+        </div>                                    
+        <div class="form-group row">
+            
+            <label class="col-md-3 form-control-label" for="message" >Message:</label>           
+            <div class="col-md-9">
+                <textarea  type="text" name="message" class="form-control"  placeholder="Required" formControlName="message"></textarea>
+            </div>                        
+        </div>                                                                                           
+        <div class="text-center">
+            <button type="submit" class="btn btn-success btn-md" [disabled]="!contactForm.valid" ><i class="fa fa-check" aria-hidden="true"></i> Send</button>                    
+          
+        </div>                               
+      </form>  
+      <div class="jsonOutput">
+          Contact Data:
+          {{contactForm.value | json}}
+      </div>
+  </div>
+  
+</section>
+<section>
+    <!--p-gmap [options]="options" [style]="{'width':'100%','height':'320px'}" ></p-gmap-->
+</section>

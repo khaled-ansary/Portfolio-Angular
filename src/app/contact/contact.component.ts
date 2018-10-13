@@ -20,17 +20,33 @@
  */
 
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormBuilder, Validators  } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contactForm;
+  options;
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+
+    this.contactForm = this.formBuilder.group({
+      'name' : new FormControl('', Validators.required),
+      'email': new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')])),
+       'message': new FormControl('', Validators.required)     
+    }); 
+
+    this.options = {
+      center: {lat: 36.890257, lng: 30.707417},
+      zoom: 12
+    };
   }
 
 }
