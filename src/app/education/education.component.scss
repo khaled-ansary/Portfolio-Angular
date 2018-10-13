@@ -1,4 +1,5 @@
 $h4-color: #FF5233 ;
+$background-color: #efefef;
 
 h2{
     text-align: center;
@@ -22,4 +23,8 @@ img{
 
 p{
     padding: 10px;
+}
+
+.card-body{
+   background-color: $background-color;
 }

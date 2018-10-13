@@ -1,4 +1,5 @@
 $h4-color: #FF5233 ;
+$background-color: #efefef;
 
 img {
     max-width: 480px; 
@@ -17,3 +18,7 @@ h4{
     line-height: 2;
     padding: 5px;
 }
+
+.card-body{
+    background-color: $background-color;
+ }
