@@ -9,12 +9,12 @@ Implement a portfolio site using Angular 6. This project includes following main
 4. Load JSON data using HTTPClient 
 5. Project Gallery
 6. Education and experience Timeline
+6. Add Contact page with Reactive Forms
+7. Add Google Maps to identify location
+8. Add Footer component
+9. Add Primeng gMap
 
 # ToDo
-
-5. Add Contact page with Reactive Forms
-6. Add Google Maps to identify location
-7. Add Footer component
 8. Modify User Interface 
 
 
